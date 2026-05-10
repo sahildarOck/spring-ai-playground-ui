@@ -1,11 +1,11 @@
 import "./App.css";
-import TextAreaContainer from "../TextArea";
+import TextArea from "../TextArea";
 
 function App() {
 
   return (
     <>
-      <TextAreaContainer />
+      <TextArea />
     </>
   );
 }

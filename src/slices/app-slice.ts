@@ -8,7 +8,7 @@ const initialState: AppState = {
     prompt: "",
 };
 
-export const appSlice = createSlice({
+const appSlice = createSlice({
     name: "app",
     initialState,
     reducers: {
@@ -17,3 +17,6 @@ export const appSlice = createSlice({
         },
     },
 });
+
+export const { setPrompt } = appSlice.actions;
+export default appSlice.reducer;
