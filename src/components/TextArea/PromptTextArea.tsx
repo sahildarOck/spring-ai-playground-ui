@@ -3,7 +3,7 @@ import { useAppDispatch } from "../../store/hooks";
 import { useAppText } from "../../slices/app-selectors";
 import { setText } from "../../slices/app-slice";
 
-const TextAreaContainer = () => {
+const PromptTextArea = () => {
   const text = useAppText();
   const dispatch = useAppDispatch();
 
@@ -13,9 +13,14 @@ const TextAreaContainer = () => {
 
   return (
     <div>
-      <TextArea text={text} onChange={handleChange} />
+      <TextArea
+        text={text}
+        onChange={handleChange}
+        name="promptText"
+        editable={true}
+      />
     </div>
   );
 };
 
-export default TextAreaContainer;
+export default PromptTextArea;

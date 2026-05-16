@@ -1,11 +1,14 @@
 import "./App.css";
-import TextArea from "../TextArea";
+import PromptTextArea from "../TextArea/PromptTextArea";
+import ResponseTextArea from "../TextArea/ResponseTextArea";
+import SendButton from "../SendButton";
 
 function App() {
-
   return (
     <>
-      <TextArea />
+      <PromptTextArea />
+      <SendButton />
+      <ResponseTextArea />
     </>
   );
 }
