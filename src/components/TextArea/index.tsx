@@ -1,9 +1,13 @@
 import TextArea from "./TextArea";
 import { useAppDispatch } from "../../store/hooks";
-import { useAppText } from "../../slices/app-selectors";
-import { setText } from "../../slices/app-slice";
+import { useAppText } from "../../slices/app/app-selectors";
+import { setText } from "../../slices/app/app-slice";
 
-const TextAreaContainer = () => {
+export interface TextAreaContainerProps {
+  editable?: boolean;
+}
+
+const TextAreaContainer = ({ editable }: TextAreaContainerProps) => {
   const text = useAppText();
   const dispatch = useAppDispatch();
 
@@ -13,7 +17,7 @@ const TextAreaContainer = () => {
 
   return (
     <div>
-      <TextArea text={text} onChange={handleChange} />
+      <TextArea text={text} onChange={handleChange} editable={editable} />
     </div>
   );
 };

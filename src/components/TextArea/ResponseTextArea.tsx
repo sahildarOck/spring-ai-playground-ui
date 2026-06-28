@@ -1,5 +1,5 @@
 import TextArea from "./TextArea";
-import { useAppResponse } from "../../slices/app-selectors";
+import { useAppResponse } from "../../slices/app/app-selectors";
 
 const ResponseTextArea = () => {
   const responseText = useAppResponse();

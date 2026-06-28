@@ -1,8 +1,8 @@
 import SendButton from "./SendButton";
-import { useAppText } from "../../slices/app-selectors";
+import { useAppText } from "../../slices/app/app-selectors";
 import { useAppDispatch } from "../../store/hooks";
-import { setPrompt } from "../../slices/app-slice";
-import { useLazyGetResponseQuery } from "../../slices/api";
+import { setPrompt } from "../../slices/app/app-slice";
+import { useLazyGetResponseQuery } from "../../slices/api/api";
 
 const SendButtonContainer = () => {
   const text = useAppText();

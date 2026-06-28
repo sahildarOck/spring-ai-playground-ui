@@ -1,5 +1,5 @@
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
-import { apiSlice } from "./api";
+import { apiSlice } from "../api/api";
 
 interface AppState {
   text: string;

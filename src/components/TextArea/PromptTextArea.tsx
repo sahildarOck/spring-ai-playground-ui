@@ -1,7 +1,7 @@
 import TextArea from "./TextArea";
 import { useAppDispatch } from "../../store/hooks";
-import { useAppText } from "../../slices/app-selectors";
-import { setText } from "../../slices/app-slice";
+import { useAppText } from "../../slices/app/app-selectors";
+import { setText } from "../../slices/app/app-slice";
 
 const PromptTextArea = () => {
   const text = useAppText();
